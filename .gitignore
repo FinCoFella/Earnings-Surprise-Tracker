@@ -9,6 +9,3 @@ __pycache__/
 # Environment variables (keep secrets out of git)
 .env
 .env.local
-
-# Generated output files
-*.xlsx
