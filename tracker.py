@@ -110,8 +110,8 @@ def export_to_excel(data, symbol):
 
         ws.append([date, period_end, quarter, actual, estimated, round(delta, 2), round(surprise, 1), flag])
 
-    os.makedirs("Excel", exist_ok=True)
-    filename = os.path.join("Excel", f"{symbol}_Earnings.xlsx")
+    os.makedirs("Excel PNG", exist_ok=True)
+    filename = os.path.join("Excel PNG", f"{symbol}_Earnings.xlsx")
     wb.save(filename)
     print(f"Exported to {filename}")
 
@@ -153,8 +153,8 @@ def export_to_chart(data, symbol):
     )
     plt.tight_layout()
 
-    os.makedirs("Excel", exist_ok=True)
-    filename = os.path.join("Excel", f"{symbol}_Surprise.png")
+    os.makedirs("Excel PNG", exist_ok=True)
+    filename = os.path.join("Excel PNG", f"{symbol}_Surprise.png")
     plt.savefig(filename, dpi=150)
     plt.close()
     print(f"Chart saved to {filename}")
