@@ -4,7 +4,7 @@ import requests
 from dotenv import load_dotenv
 import openpyxl
 
-load_dotenv()
+load_dotenv("Miscellaneous/.env")
 
 API_KEY = os.getenv("FMP_API_KEY")
 BASE_URL = "https://financialmodelingprep.com/stable/earnings"
